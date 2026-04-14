@@ -37,7 +37,7 @@ const Testimonials = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             whileHover={{ y: -8 }}
                             transition={{ duration: 0.3 }}
-                            className="relative bg-white p-8 rounded-3xl shadow-sm border border-gray-50 overflow-hidden group"
+                            className="relative bg-white p-8 rounded-xl shadow-sm border border-gray-50 overflow-hidden group"
                         >
                             {/* Background Decorative Circles */}
                             <div className="absolute top-0 right-0 w-24 h-24 bg-[#E8F5EE] rounded-bl-full -mr-8 -mt-8 opacity-50 transition-all group-hover:scale-110"></div>
@@ -46,7 +46,7 @@ const Testimonials = () => {
                             <div className="relative z-10 flex flex-col items-center">
                                 {/* Profile Image & Role */}
                                 <div className="relative mb-6">
-                                    <div className="w-24 h-24 rounded-full border-2 border-green-500 p-1 bg-white">
+                                    <div className="w-24 h-24 rounded-full border-2 border-gray-400 group-hover:border-green-500 duration-300 p-1 bg-white">
                                         <img
                                             src={item.image}
                                             alt={item.name}
@@ -59,7 +59,7 @@ const Testimonials = () => {
                                 </div>
 
                                 {/* Parent Info */}
-                                <h3 className="text-xl font-bold text-[#064E3B] mb-4">{item.name}</h3>
+                                <h3 className="text-xl font-bold group-hover:text-green-500 duration-300 mb-4">{item.name}</h3>
 
                                 {/* Comment */}
                                 <p className="text-gray-600 text-center text-sm leading-relaxed mb-6 italic">
@@ -79,7 +79,7 @@ const Testimonials = () => {
                                 </div>
 
                                 {/* Button */}
-                                <button className="bg-[#053729] hover:bg-[#064E3B] text-white text-[10px] font-bold py-2 px-6 rounded-full transition-all active:scale-95">
+                                <button className="text-[10px] border border-gray-200 group-hover:bg-[#065F46] group-hover:text-white duration-300 font-bold py-2 px-6 rounded-full transition-all active:scale-95">
                                     বিস্তারিত পড়ুন
                                 </button>
                             </div>
