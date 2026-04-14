@@ -3,17 +3,15 @@ import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <nav className="fixed left-0 w-full z-50 bg-[#111827] text-white border-y border-gray-800 shadow-lg 
-            /* Mobile: Bottom position */
-            bottom-0 md:top-0 md:bottom-auto py-2 px-4">
-            
-            <div className="max-w-7xl mx-auto">
-                {/* Desktop View (md and up) */}
+        <nav className={`fixed left-0 w-full z-50 bg-[#111827] text-white border-y border-gray-800 shadow-lg py-2 px-4 bottom-0 md:top-0 md:bottom-auto`}>
+
+            <div className="container mx-auto">
+                {/* Desktop View */}
                 <div className="hidden md:flex items-center justify-between gap-4">
                     <h2 className="text-[#FBBF24] font-bold text-lg whitespace-nowrap">
                         স্কুল/মাদ্রাসা ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করুন
                     </h2>
-                    
+
                     <div className="bg-[#EF4444] px-3 py-1 rounded text-sm font-bold animate-pulse">
                         20% <br /> OFF
                     </div>
@@ -48,11 +46,11 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                {/* Mobile View (Below md) */}
+                {/* Mobile View) */}
                 <div className="md:hidden flex flex-col gap-2">
                     <div className="flex justify-between items-center">
                         <h2 className="text-[#FBBF24] font-bold text-sm">
-                            স্কুল/মাদ্রাসা ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করুন
+                            স্কুল/মাদ্রাসার ওয়েবসাইট তৈরি করুন
                         </h2>
                         <span className="bg-[#EF4444] text-[10px] px-2 py-0.5 rounded font-bold">20% OFF</span>
                     </div>
@@ -79,10 +77,10 @@ const Navbar = () => {
 
                     {/* Mobile Buttons */}
                     <div className="flex gap-2 h-8">
-                        <button className="flex-1 bg-[#22C55E] rounded flex items-center justify-center">
+                        <button className="flex-1 bg-[#22C55E] rounded flex items-center justify-center hover:cursor-pointer">
                             <FaWhatsapp className="text-white" />
                         </button>
-                        <button className="flex-1 bg-[#3B82F6] rounded flex items-center justify-center">
+                        <button className="flex-1 bg-[#3B82F6] rounded flex items-center hover:cursor-pointer justify-center">
                             <FaPhoneAlt className="text-white text-xs" />
                         </button>
                     </div>
