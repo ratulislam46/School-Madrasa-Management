@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "শিক্ষা মন্ত্রণালয়",
+    "image": "/icons/moedu.png"
+  },
+  {
+    "id": 2,
+    "title": "মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর",
+    "image": "/icons/dshe.png"
+  },
+  {
+    "id": 3,
+    "title": "ঢাকা শিক্ষা বোর্ড",
+    "image": "/icons/board.png"
+  },
+  {
+    "id": 4,
+    "title": "ব্যানবেইস",
+    "image": "/icons/banbeis.png"
+  },
+  {
+    "id": 5,
+    "title": "শিক্ষক বাতায়ন",
+    "image": "/icons/batayon.png"
+  },
+  {
+    "id": 6,
+    "title": "ভর্তি আবেদন",
+    "image": "/icons/admission.png"
+  },
+  {
+    "id": 7,
+    "title": "ফলাফল",
+    "image": "/icons/result.png"
+  },
+  {
+    "id": 8,
+    "title": "ডাউনলোড",
+    "image": "/icons/download.png"
+  }
+]
