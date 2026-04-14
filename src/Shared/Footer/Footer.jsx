@@ -4,11 +4,11 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaYoutube } from '
 const Footer = () => {
     return (
         <footer className="bg-[#0b121e] text-gray-300 py-10 px-6 md:px-16 lg:px-24">
-            <div className="max-w-7xl mx-auto">
+            <div className="container mx-auto">
                 {/* Top Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-gray-800 pb-10">
                     
-                    {/* Left Side - Logo & Description */}
+                    {/* Logo & Description */}
                     <div className="space-y-5">
                         <img 
                             src="/path-to-your-logo.png" 
@@ -84,9 +84,9 @@ const Footer = () => {
 
                 {/* Bottom Section */}
                 <div className="pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
-                    <p>© 2026 BDITHOME School. All rights reserved.</p>
+                    <p>© 2026 Olive71 School. All rights reserved.</p>
                     <p>
-                        Developed by <span className="text-yellow-500 font-bold tracking-wider">BDITHOME</span>
+                        Developed by <span className="text-yellow-500 font-bold tracking-wider">Olive71</span>
                     </p>
                 </div>
             </div>
