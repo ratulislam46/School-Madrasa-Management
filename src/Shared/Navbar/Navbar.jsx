@@ -9,7 +9,7 @@ const Navbar = () => {
                 {/* Desktop View */}
                 <div className="hidden md:flex items-center justify-between gap-4">
                     <h2 className="text-[#FBBF24] font-bold text-lg whitespace-nowrap">
-                        স্কুল/মাদ্রাসা ওয়ার্ডপ্রেস ওয়েবসাইট তৈরি করুন
+                        স্কুল/মাদ্রাসার ওয়েবসাইট তৈরি করুন
                     </h2>
 
                     <div className="bg-[#EF4444] px-3 py-1 rounded text-sm font-bold animate-pulse">
