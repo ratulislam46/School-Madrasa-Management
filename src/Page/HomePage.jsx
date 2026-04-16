@@ -7,10 +7,12 @@ import MultiMedia from './MultiMedia';
 import Gallery from './Gallery';
 import HistoryAndMessages from './HistoryAndMessages';
 import HeroSection from './HeroSection';
+import MenuBar from './MenuBar';
 
 const HomePage = () => {
     return (
         <div>
+            <MenuBar/>
             <HeroSection/>
             <HistoryAndMessages/>
             <StaffSection/>
