@@ -84,7 +84,7 @@ const Footer = () => {
 
                 {/* Bottom Section */}
                 <div className="pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
-                    <p>© 2026 Olive71 School. All rights reserved.</p>
+                    <p>© 2026 Demo School. All rights reserved.</p>
                     <p>
                         Developed by <span className="text-yellow-500 font-bold tracking-wider">Olive71</span>
                     </p>

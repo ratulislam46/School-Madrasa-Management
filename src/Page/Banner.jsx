@@ -22,7 +22,7 @@ const Banner = () => {
             {/* Bengali, Arabic, and English Text */}
             <div className="space-y-1 md:space-y-2">
               <h1 className="text-white text-2xl md:text-4xl lg:text-6xl font-extrabold leading-tight drop-shadow-lg">
-                <span className="bengali-font">ডেমো স্কুল ও মাদ্রাসা ওয়েবসাইট</span>
+                <span className="bengali-font">ডেমো স্কুল ও মাদ্রাসা</span>
               </h1>
               
               <p className="text-yellow-400 text-lg md:text-2xl lg:text-4xl font-medium drop-shadow">
