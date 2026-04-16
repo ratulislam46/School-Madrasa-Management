@@ -80,7 +80,7 @@ const MultiMedia = () => {
                                 frameBorder="0"
                                 allowFullScreen={true}
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                className="w-full h-95 md:h-100"
+                                
                             >
                             </iframe>
                         </div>

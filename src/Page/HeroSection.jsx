@@ -15,7 +15,7 @@ const HeroSection = () => {
     ];
 
     useEffect(() => {
-        axios.get('/public/notices.json').then(res => setNotices(res.data));
+        axios.get('/notices.json').then(res => setNotices(res.data));
 
         // Image auto slider timer 
         const interval = setInterval(() => {
@@ -51,7 +51,7 @@ const HeroSection = () => {
                     </div>
 
                     <div className="grid grid-cols-4 gap-3">
-                        {galleryData.map((img, index) => (
+                        {galleryData?.map((img, index) => (
                             <div
                                 key={img.id}
                                 onClick={() => setActiveIndex(index)}

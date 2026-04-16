@@ -39,7 +39,7 @@ const Gallery = () => {
                     </div>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                        {photos.map((photo) => (
+                        {photos?.map((photo) => (
                             <div 
                                 key={photo.id}
                                 className="relative group cursor-pointer overflow-hidden rounded-xl h-32 md:h-40"
@@ -73,10 +73,10 @@ const Gallery = () => {
                         </button>
                     </div>
 
-                    <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2 custom-scrollbar">
-                        {videos.map((video) => (
+                    <div className="space-y-4 max-h-100 overflow-y-auto pr-2 custom-scrollbar">
+                        {videos?.map((video) => (
                             <div key={video.id} className="flex gap-4 p-2 bg-white rounded-xl hover:shadow-md transition-shadow group cursor-pointer">
-                                <div className="relative w-32 h-20 flex-shrink-0 overflow-hidden rounded-lg">
+                                <div className="relative w-32 h-20 shrink-0 overflow-hidden rounded-lg">
                                     <img src={video.thumbnail} className="w-full h-full object-cover" alt={video.title} onError={(e) => { e.target.src = 'https://via.placeholder.com/150'; }} />
                                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                                         <div className="bg-red-600 p-2 rounded-full text-white transform group-hover:scale-110 transition-transform">

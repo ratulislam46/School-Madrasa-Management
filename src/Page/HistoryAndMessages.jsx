@@ -14,7 +14,7 @@ const HistoryAndMessages = () => {
     ];
 
     useEffect(() => {
-        axios.get('/public/teachers-message.json')
+        axios.get('/teachers-message.json')
             .then(res => setMessages(res.data))
             .catch(err => console.error("Error fetching messages:", err));
     }, []);
@@ -46,7 +46,7 @@ const HistoryAndMessages = () => {
 
                         {/* Image collection  */}
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                            {galleryImages.map((src, idx) => (
+                            {galleryImages?.map((src, idx) => (
                                 <div 
                                     key={idx} 
                                     onClick={() => setSelectedImg(src)}

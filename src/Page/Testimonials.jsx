@@ -7,7 +7,7 @@ const Testimonials = () => {
     console.log(reviews);
 
     useEffect(() => {
-        axios.get('/public/testimonials.json')
+        axios.get('/testimonials.json')
             .then(res => {
                 setReviews(res.data);
                 console.log(res.data);
@@ -29,7 +29,7 @@ const Testimonials = () => {
 
                 {/* Testimonial Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {reviews.map((item) => (
+                    {reviews?.map((item) => (
                         <motion.div
                             key={item.id}
                             initial={{ opacity: 0, y: 20 }}

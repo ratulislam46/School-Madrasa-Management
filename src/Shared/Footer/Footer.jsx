@@ -67,7 +67,7 @@ const Footer = () => {
                                 <div className="bg-gray-800 p-2 rounded">
                                     <FaPhoneAlt className="text-green-500" />
                                 </div>
-                                <p>+880190-5466603</p>
+                                <p>+880 1750-965595</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="bg-gray-800 p-2 rounded">

@@ -11,7 +11,7 @@ const StaffSection = () => {
     const categories = ["শিক্ষক মণ্ডলী", "কর্মকর্তা", "কর্মচারী"];
 
     useEffect(() => {
-        axios.get('/public/staff.json')
+        axios.get('/staff.json')
             .then(res => {
                 setAllStaff(res.data);
     

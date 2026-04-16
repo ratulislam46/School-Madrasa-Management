@@ -6,7 +6,7 @@ const LatestNews = () => {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
-        axios.get('/public/news.json')
+        axios.get('/news.json')
             .then(res => setNews(res.data))
             .catch(err => console.error("News fetching error:", err));
     }, []);

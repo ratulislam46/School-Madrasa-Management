@@ -41,7 +41,7 @@ const MenuBar = () => {
 
                     {/* Menu Button For Lerge Device  */}
                     <div className="hidden md:flex items-center space-x-1 lg:space-x-4">
-                        {navLinks.map((item, index) => (
+                        {navLinks?.map((item, index) => (
                             item.subLinks ? (
                                 <div
                                     key={index}
@@ -55,7 +55,7 @@ const MenuBar = () => {
 
                                     {/* Accademic dropdown menu  */}
                                     <div className={`absolute top-full left-0 w-40 bg-white shadow-xl rounded-b-lg overflow-hidden transition-all duration-300 ${isDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
-                                        {item.subLinks.map((sub, idx) => (
+                                        {item.subLinks?.map((sub, idx) => (
                                             <a
                                                 key={idx}
                                                 href={sub.link}
@@ -91,13 +91,13 @@ const MenuBar = () => {
             {/* Mobile menu slider for small device  */}
             <div className={`md:hidden bg-[#1a6b50] overflow-hidden transition-all duration-500 ${isOpen ? 'max-h-125 border-t border-white/20' : 'max-h-0'}`}>
                 <div className="px-4 py-4 space-y-3">
-                    {navLinks.map((item, index) => (
+                    {navLinks?.map((item, index) => (
                         <div key={index}>
                             {item.subLinks ? (
                                 <div className="space-y-2">
                                     <div className="text-yellow-200 font-bold border-b border-white/10 pb-1">{item.name}</div>
                                     <div className="pl-4 space-y-2">
-                                        {item.subLinks.map((sub, idx) => (
+                                        {item?.subLinks?.map((sub, idx) => (
                                             <a key={idx} href={sub.link} className="block text-white/90 text-sm hover:text-white cursor-pointer">{sub.name}</a>
                                         ))}
                                     </div>
