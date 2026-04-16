@@ -24,7 +24,7 @@ const MenuBar = () => {
     ];
 
     return (
-        <nav className="bg-linear-to-r from-[#1a6b50] via-[#4b9a75] to-[#a2cc94] shadow-md z-1000 font-sans md:relative fixed top-0 left-0 w-full">
+        <nav className="bg-linear-to-r from-[#1a6b50] via-[#4b9a75] to-[#a2cc94] shadow-md z-49 font-sans md:relative fixed top-0 left-0 w-full">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center h-14 md:h-16">
 
