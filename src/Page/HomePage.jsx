@@ -8,10 +8,12 @@ import Gallery from './Gallery';
 import HistoryAndMessages from './HistoryAndMessages';
 import HeroSection from './HeroSection';
 import MenuBar from './MenuBar';
+import Banner from './Banner';
 
 const HomePage = () => {
     return (
         <div>
+            <Banner/>
             <MenuBar/>
             <HeroSection/>
             <HistoryAndMessages/>

@@ -1,15 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { motion } from 'framer-motion';
+import {
+    FaUniversity,
+    FaGraduationCap,
+    FaChalkboardTeacher,
+    FaFileAlt,
+    FaDownload,
+    FaUserEdit,
+    FaChartBar,
+    FaSchool
+} from 'react-icons/fa';
 
 const ImportantLinks = () => {
-    const [links, setLinks] = useState([]);
 
-    useEffect(() => {
-        axios.get('/public/links.json')
-            .then(res => setLinks(res.data))
-            .catch(err => console.error("Error fetching links:", err));
-    }, []);
+    const links = [
+        { id: 1, title: "শিক্ষা মন্ত্রণালয়", icon: <FaUniversity className="text-blue-600" /> },
+        { id: 2, title: "মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর", icon: <FaSchool className="text-green-700" /> },
+        { id: 3, title: "ঢাকা শিক্ষা বোর্ড", icon: <FaGraduationCap className="text-red-600" /> },
+        { id: 4, title: "ব্যানবেইস", icon: <FaChartBar className="text-purple-600" /> },
+        { id: 5, title: "শিক্ষক বাতায়ন", icon: <FaChalkboardTeacher className="text-teal-600" /> },
+        { id: 6, title: "ভর্তি আবেদন", icon: <FaUserEdit className="text-orange-600" /> },
+        { id: 7, title: "ফলাফল", icon: <FaFileAlt className="text-indigo-600" /> },
+        { id: 8, title: "ডাউনলোড", icon: <FaDownload className="text-gray-700" /> }
+    ];
 
     return (
         <section className="py-16 px-6 md:px-16 lg:px-24">
@@ -37,12 +50,7 @@ const ImportantLinks = () => {
                             className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl flex flex-col items-center justify-center gap-4 transition-all hover:bg-[#065F46] duration-300 group"
                         >
                             <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center border border-gray-100 overflow-hidden">
-                                <img
-                                    src={link.image}
-                                    alt={link.title}
-                                    className="w-10 h-10 object-contain opacity-70 group-hover:opacity-100"
-                                    onError={(e) => { e.target.src = 'https://via.placeholder.com/40'; }}
-                                />
+                                {link.icon}
                             </div>
 
                             <span className="text-sm md:text-base font-semibold text-[#334155] group-hover:text-white duration-300">
