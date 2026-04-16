@@ -5,7 +5,7 @@
     "role": "সহকারী প্রধান শিক্ষক",
     "phone": "০১৭১২-৩৪৫৬৭৮",
     "category": "শিক্ষক মণ্ডলী",
-    "image": "/images/staff1.png"
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "role": "মাদ্রাসা সুপার / অধ্যক্ষ",
     "phone": "০১৮১৯-৭৮৯৪৫৬",
     "category": "শিক্ষক মণ্ডলী",
-    "image": "/images/staff2.png"
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "role": "প্রধান শিক্ষক",
     "phone": "০১৭১২-৩৪৫৬৭৮",
     "category": "শিক্ষক মণ্ডলী",
-    "image": "/images/staff3.png"
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "role": "হিসাব রক্ষক",
     "phone": "০১৯১১-২২৩৩৪৪",
     "category": "কর্মকর্তা",
-    "image": "/images/staff4.png"
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   },
   {
     "id": 5,
@@ -37,6 +37,6 @@
     "role": "অফিস সহকারী",
     "phone": "০১৭০০-১১২২৩৩",
     "category": "কর্মচারী",
-    "image": "/images/staff5.png"
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   }
 ]

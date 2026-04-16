@@ -14,7 +14,6 @@ const MultiMedia = () => {
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a202c] relative inline-block">
                         মাল্টিমিডিয়া ও সংযোগ
-                        <span className="block w-2/3 h-1.5 bg-[#056f4d] mx-auto mt-2 rounded-full"></span>
                     </h2>
                     <p className="text-gray-500 mt-4 text-sm md:text-base font-medium">
                         আমাদের ডিজিটাল কর্নার ও সামাজিক যোগাযোগ

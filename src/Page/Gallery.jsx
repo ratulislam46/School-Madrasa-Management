@@ -6,10 +6,12 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const photos = [
-        { id: 1, src: "/images/p1.jpg" },
-        { id: 2, src: "/images/p2.jpg" },
-        { id: 3, src: "/images/p3.jpg" },
-        { id: 4, src: "/images/p4.jpg" },
+        { id: 1, src: "https://i.ibb.co.com/KjfCyrjS/cress.jpg" },
+        { id: 2, src: "https://i.ibb.co.com/W4nHVfX5/computer-lab.jpg" },
+        { id: 3, src: "https://i.ibb.co.com/WNZhbxQr/campus.png" },
+        { id: 4, src: "https://i.ibb.co.com/vCDxsFQr/stude.jpg" },
+        { id: 5, src: "https://i.ibb.co.com/C3NDw4B5/islammmm.jpg" },
+        { id: 6, src: "https://i.ibb.co.com/cc0679pk/sportss.jpg" },
     ];
 
     const videos = [
@@ -23,7 +25,6 @@ const Gallery = () => {
         <section className="bg-[#047857] py-16 px-4 md:px-10">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
                 
-                {/* --- ফটো গ্যালারি সেকশন --- */}
                 <div className="bg-[#f3f4f6] rounded-3xl p-6 shadow-lg h-full">
                     <div className="flex justify-between items-center mb-6">
                         <div className="flex items-center gap-3">
@@ -59,7 +60,6 @@ const Gallery = () => {
                     </div>
                 </div>
 
-                {/* --- ভিডিও গ্যালারি সেকশন --- */}
                 <div className="bg-[#f3f4f6] rounded-3xl p-6 shadow-lg h-full">
                     <div className="flex justify-between items-center mb-6">
                         <div className="flex items-center gap-3">
@@ -96,7 +96,6 @@ const Gallery = () => {
                 </div>
             </div>
 
-            {/* --- Image Lightbox / Modal --- */}
             <AnimatePresence>
                 {selectedImage && (
                     <motion.div 

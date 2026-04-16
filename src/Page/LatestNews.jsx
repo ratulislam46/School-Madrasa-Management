@@ -17,9 +17,8 @@ const LatestNews = () => {
 
                 {/* Section Header */}
                 <div className="max-w-7xl mx-auto text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#064e3b] relative inline-block">
+                    <h2 className="text-3xl md:text-4xl font-bold relative inline-block">
                         সর্বশেষ সংবাদ
-                        <span className="block w-24 h-1 bg-green-600 mx-auto mt-2"></span>
                     </h2>
                     <p className="text-gray-500 mt-4 text-sm md:text-base">
                         প্রতিষ্ঠানের শিক্ষা ও কার্যক্রম বিষয়ক আপডেট

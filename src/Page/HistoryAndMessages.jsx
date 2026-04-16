@@ -7,11 +7,10 @@ const HistoryAndMessages = () => {
     const [messages, setMessages] = useState([]);
     const [selectedImg, setSelectedImg] = useState(null);
 
-    // ইমেজ গ্যালারি ডাটা
     const galleryImages = [
-        "/images/g1.jpg",
-        "/images/g2.jpg",
-        "/images/g3.jpg"
+        "https://i.ibb.co.com/W4nHVfX5/computer-lab.jpg",
+        "https://i.ibb.co.com/KjfCyrjS/cress.jpg",
+        "https://i.ibb.co.com/vCDxsFQr/stude.jpg"
     ];
 
     useEffect(() => {
@@ -24,7 +23,6 @@ const HistoryAndMessages = () => {
         <section className="bg-gray-50 py-12 px-4 md:px-10 font-sans">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
-                {/* বাম পাশ: প্রতিষ্ঠানের ইতিহাস ও গ্যালারি */}
                 <div className="lg:col-span-2 space-y-6">
                     <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100">
                         <div className="flex items-center gap-3 mb-6">
@@ -42,11 +40,11 @@ const HistoryAndMessages = () => {
                                 </button>
                             </div>
                             <div className="w-full md:w-64 h-48 rounded-2xl overflow-hidden border-4 border-gray-50 shadow-sm">
-                                <img src="/images/building.jpg" className="w-full h-full object-cover" alt="Building" onError={(e) => e.target.src='https://via.placeholder.com/300x200'} />
+                                <img src="https://i.ibb.co.com/WNZhbxQr/campus.png" className="w-full h-full object-cover" alt="Building" onError={(e) => e.target.src='https://via.placeholder.com/300x200'} />
                             </div>
                         </div>
 
-                        {/* ইমেজ গ্যালারি উইথ হোভার ইফেক্ট */}
+                        {/* Image collection  */}
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                             {galleryImages.map((src, idx) => (
                                 <div 
@@ -88,7 +86,6 @@ const HistoryAndMessages = () => {
                     </div>
                 </div>
 
-                {/* ডান পাশ: অন্যান্য বাণী */}
                 <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 h-fit">
                     <div className="flex items-center gap-3 mb-8">
                         <FaUsers className="text-green-700 text-xl" />
@@ -119,7 +116,6 @@ const HistoryAndMessages = () => {
                 </div>
             </div>
 
-            {/* লাইটবক্স মডাল (ইমেজ বড় করার জন্য) */}
             <AnimatePresence>
                 {selectedImg && (
                     <motion.div 

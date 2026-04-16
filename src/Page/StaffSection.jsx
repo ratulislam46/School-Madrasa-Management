@@ -29,16 +29,16 @@ const StaffSection = () => {
 
     return (
         <section className="bg-white py-16 px-4">
-            <div className="max-w-6xl mx-auto text-center">
+            <div className="container mx-auto text-center">
                 {/* Header */}
-                <h2 className="text-3xl md:text-4xl font-bold text-[#064e3b] mb-2 underline underline-offset-8 decoration-green-600">
+                <h2 className="text-3xl md:text-4xl font-bold mb-2">
                     আমাদের জনবল
                 </h2>
-                <p className="text-gray-500 mb-8 text-sm italic">দক্ষ ও অভিজ্ঞ শিক্ষক-কর্মকর্তাবৃন্দ</p>
+                <p className="text-gray-500 mb-8 text-sm">দক্ষ ও অভিজ্ঞ শিক্ষক-কর্মকর্তাবৃন্দ</p>
 
                 {/* Filter Buttons */}
                 <div className="flex flex-wrap justify-center gap-3 mb-12">
-                    {categories.map((cat) => (
+                    {categories?.map((cat) => (
                         <button
                             key={cat}
                             onClick={() => handleFilter(cat)}
@@ -54,9 +54,9 @@ const StaffSection = () => {
                 </div>
 
                 {/* Staff List */}
-                <div className="grid grid-cols-1 gap-6 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
                     <AnimatePresence mode='wait'>
-                        {filteredStaff.map((staff) => (
+                        {filteredStaff?.map((staff) => (
                             <motion.div
                                 key={staff.id}
                                 layout

@@ -19,9 +19,8 @@ const Testimonials = () => {
         <section className="bg-[#F3FAF6] py-16 px-6 md:px-16 lg:px-24">
             <div className='container mx-auto'>
                 <div className="max-w-6xl mx-auto text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#064E3B] relative inline-block">
+                    <h2 className="text-3xl md:text-4xl font-bold relative inline-block">
                         অভিভাবকের মতামত
-                        <span className="block w-20 h-1 bg-green-500 mx-auto mt-2"></span>
                     </h2>
                     <p className="text-gray-500 mt-4 italic text-sm md:text-base">
                         আমাদের প্রতিষ্ঠান সম্পর্কে সম্মানিত অভিভাবকদের অভিমত

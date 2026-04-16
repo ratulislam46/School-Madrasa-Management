@@ -8,10 +8,10 @@ const HeroSection = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const galleryData = [
-        { id: 1, src: "/images/img1.jpg", title: "আধুনিক শিক্ষার পাশাপাশি নৈতিক ও ধর্মীয় শিক্ষাকে সমান গুরুত্ব" },
-        { id: 2, src: "/images/img2.jpg", title: "আমাদের মাদ্রাসার বার্ষিক ক্রীড়া প্রতিযোগিতা ও পুরষ্কার বিতরণ" },
-        { id: 3, src: "/images/img3.jpg", title: "শিক্ষার্থীদের জন্য বিশেষ কম্পিউটার ল্যাব ও আইটি শিক্ষা" },
-        { id: 4, src: "/images/img4.jpg", title: "হিফজুল কুরআন বিভাগের বিশেষ দোয়া ও শিক্ষা কার্যক্রম" }
+        { id: 1, src: "https://i.ibb.co.com/PzwbwT4J/islam-sikkha.jpg", title: "আধুনিক শিক্ষার পাশাপাশি নৈতিক ও ধর্মীয় শিক্ষাকে সমান গুরুত্ব" },
+        { id: 2, src: "https://i.ibb.co.com/cc0679pk/sportss.jpg", title: "আমাদের মাদ্রাসার বার্ষিক ক্রীড়া প্রতিযোগিতা ও পুরষ্কার বিতরণ" },
+        { id: 3, src: "https://i.ibb.co.com/W4nHVfX5/computer-lab.jpg", title: "শিক্ষার্থীদের জন্য বিশেষ কম্পিউটার ল্যাব ও আইটি শিক্ষা" },
+        { id: 4, src: "https://i.ibb.co.com/C3NDw4B5/islammmm.jpg", title: "হিফজুল কুরআন বিভাগের বিশেষ দোয়া ও শিক্ষা কার্যক্রম" }
     ];
 
     useEffect(() => {
@@ -71,7 +71,7 @@ const HeroSection = () => {
                             <h3 className="text-xl font-bold text-gray-800">বাণী</h3>
                         </div>
                         <div className="flex items-center gap-4 mb-6">
-                            <img src="/images/kamrul.jpg" className="w-16 h-16 rounded-full border-2 border-green-100 p-1 object-cover" alt="head" />
+                            <img src="https://i.ibb.co.com/SDzLVmdP/old-man.jpg" className="w-16 h-16 rounded-full border-2 border-green-100 p-1 object-cover" alt="head" />
                             <div>
                                 <h4 className="font-bold text-gray-800">মো: কামরুল ইসলাম</h4>
                                 <p className="text-green-600 text-xs font-semibold">অধ্যক্ষ</p>
