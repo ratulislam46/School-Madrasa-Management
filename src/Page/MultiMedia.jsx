@@ -29,24 +29,22 @@ const MultiMedia = () => {
                             <h3 className="text-white text-lg font-bold">জাতীয় সঙ্গীত</h3>
                         </div>
 
-                        <div className="flex-grow p-6 flex flex-col items-center justify-center">
-                            {/* Audio Placeholder (Replace with your actual audio tag) */}
-                            {/* <audio controls src="/audio/your_audio_file.mp3" className="w-full mt-4"></audio> */}
-
-                            {/* Visual Placeholder to match image style */}
-                            <div className="w-48 h-32 md:w-56 md:h-36 bg-gray-200 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-300 mb-6">
-                                <FaMusic className="text-gray-400 text-5xl" />
+                        <div className="grow p-6 flex flex-col items-center justify-center">
+                            {/* YouTube Video Container */}
+                            <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-inner border border-gray-100 mb-4">
+                                <iframe
+                                    className="w-full h-full"
+                                    src="https://www.youtube.com/embed/ZjAEe3GSV34?si=EF2jaD5cjbfboQa2"
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                ></iframe>
                             </div>
 
-                            <audio controls className="w-full focus:outline-none focus:ring-2 focus:ring-[#056f4d] rounded-full">
-                                {/* আপনার অডিও ফাইলের সঠিক পাথ এখানে বসান।
-                  যেমন:src={"/audio/national_anthem.mp3"}
-                */}
-                                <source src="/audio/national_anthem.mp3" type="audio/mpeg" />
-                                আপনার ব্রাউজার অডিও সাপোর্ট করে না।
-                            </audio>
-                            <p className="text-gray-500 text-xs mt-4 text-center italic">
-                                অডিও ফাইলটি শুনতে প্লে বাটনে ক্লিক করুন
+                            <p className="text-gray-500 text-xs mt-2 text-center italic">
+                                জাতীয় সঙ্গীত শুনতে প্লে বাটনে ক্লিক করুন
                             </p>
                         </div>
                     </div>
@@ -80,7 +78,7 @@ const MultiMedia = () => {
                                 frameBorder="0"
                                 allowFullScreen={true}
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                
+
                             >
                             </iframe>
                         </div>
