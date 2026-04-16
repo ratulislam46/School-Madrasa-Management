@@ -26,7 +26,7 @@ const HeroSection = () => {
 
     return (
         <section className="py-12 px-4 md:px-10 bg-gray-50">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
 
                 <div className="lg:col-span-5 flex flex-col gap-4">
                     <div className="relative h-75 md:h-100 rounded-2xl overflow-hidden shadow-lg group">
