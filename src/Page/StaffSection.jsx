@@ -14,14 +14,13 @@ const StaffSection = () => {
         axios.get('/public/staff.json')
             .then(res => {
                 setAllStaff(res.data);
-                // ডিফল্টভাবে প্রথম ক্যাটাগরির ডাটা সেট করা
+    
                 const initial = res.data.filter(item => item.category === "শিক্ষক মণ্ডলী");
                 setFilteredStaff(initial);
             })
             .catch(err => console.error("Staff data load error:", err));
     }, []);
 
-    // ফিল্টার ফাংশন
     const handleFilter = (category) => {
         setActiveTab(category);
         const filtered = allStaff.filter(item => item.category === category);

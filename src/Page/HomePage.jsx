@@ -5,10 +5,12 @@ import ImportantLinks from './ImportantLinks';
 import StaffSection from './StaffSection';
 import MultiMedia from './MultiMedia';
 import Gallery from './Gallery';
+import HistoryAndMessages from './HistoryAndMessages';
 
 const HomePage = () => {
     return (
         <div>
+            <HistoryAndMessages/>
             <StaffSection/>
             <Gallery/>
             <MultiMedia/>
