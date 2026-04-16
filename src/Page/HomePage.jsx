@@ -4,12 +4,14 @@ import LatestNews from './LatestNews';
 import ImportantLinks from './ImportantLinks';
 import StaffSection from './StaffSection';
 import MultiMedia from './MultiMedia';
+import Gallery from './Gallery';
 
 const HomePage = () => {
     return (
         <div>
-            <MultiMedia/>
             <StaffSection/>
+            <Gallery/>
+            <MultiMedia/>
             <ImportantLinks/>
             <LatestNews/>
            <Testimonials/>

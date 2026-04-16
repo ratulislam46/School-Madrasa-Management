@@ -9,7 +9,7 @@ const MultiMedia = () => {
 
     return (
         <section className="bg-gray-50 py-16 px-4 md:px-8 lg:px-16">
-            <div className="max-w-7xl mx-auto">
+            <div className="container mx-auto">
                 {/* Section Title */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a202c] relative inline-block">
@@ -81,7 +81,7 @@ const MultiMedia = () => {
                                 frameBorder="0"
                                 allowFullScreen={true}
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                className="w-full h-[380px] md:h-[400px]"
+                                className="w-full h-95 md:h-100"
                             >
                             </iframe>
                         </div>
