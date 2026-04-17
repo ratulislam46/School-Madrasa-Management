@@ -3,7 +3,7 @@ import BannerImage from '../assets/banner.jpg'
 
 const Banner = () => {
   return (
-    <section className="bg-white pt-10 md:pt-16">
+    <section className="bg-white pt-10 md:pt-12">
       <div className="w-full mx-auto">
         {/* Banner Container */}
         <div 
