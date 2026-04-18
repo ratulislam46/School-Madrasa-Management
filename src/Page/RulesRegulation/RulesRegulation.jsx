@@ -38,8 +38,7 @@ const RulesRegulation = () => {
 
                 {/* Header Section */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-[#065f46] mb-4">প্রতিষ্ঠানের নীতিমালা ও আচরণবিধি</h2>
-                    <div className="w-20 h-1.5 bg-[#065f46] mx-auto rounded-full mb-4"></div>
+                    <h2 className="text-4xl font-bold mb-4">প্রতিষ্ঠানের নীতিমালা ও আচরণবিধি</h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
                         একটি সুশৃঙ্খল ও আদর্শ শিক্ষাঙ্গন গড়ে তুলতে আমাদের নির্ধারিত নিয়মাবলি মেনে চলা প্রতিটি শিক্ষার্থীর দায়িত্ব।
                     </p>

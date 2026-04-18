@@ -8,14 +8,7 @@ const MenuBar = () => {
     const navLinks = [
         { name: 'হোম', link: '/' },
         { name: 'প্রতিষ্ঠান এর ইতিহাস', link: '/history' },
-        {
-            name: 'একাডেমী',
-            link: '#',
-            subLinks: [
-                { name: 'ভর্তি', link: '#' },
-                { name: 'ফলাফল', link: '#' }
-            ]
-        },
+        { name: 'ভর্তি', link: '/admission-form' },
         { name: 'নিউজ', link: '/all-news' },
         { name: 'যোগাযোগ', link: '/contact' },
         { name: 'নীতিমালা', link: '/rules-regulation' },

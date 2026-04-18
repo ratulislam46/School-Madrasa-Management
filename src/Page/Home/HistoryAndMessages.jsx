@@ -37,7 +37,7 @@ const HistoryAndMessages = () => {
         e.preventDefault();
 
         const phoneNumber = "+8801643110638";
-        const message = `নতুন অনলাইন আবেদন:%0A
+        const message = `অনলাইন আবেদন:%0A
         ছাত্র / ছাত্রীর নাম: ${formData.studentName}%0A
         পূর্ববর্তী স্কুল: ${formData.prevSchool || 'প্রযোজ্য নয়'}%0A
         পূর্ববর্তী ক্লাস: ${formData.prevClass || 'প্রযোজ্য নয়'}%0A

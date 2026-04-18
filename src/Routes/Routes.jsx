@@ -10,6 +10,7 @@ import AllNews from "../Page/AllNews/AllNews";
 import NewsDetails from "../Page/AllNews/NewsDetails";
 import Contact from "../Page/Contact/Contact";
 import RulesRegulation from "../Page/RulesRegulation/RulesRegulation";
+import AdmissionForm from "../Page/AdmissionForm/AdmissionForm";
 
 export const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
       {
         path: 'rules-regulation',
         Component: RulesRegulation
+      },
+      {
+        path: 'admission-form',
+        Component: AdmissionForm
       }
     ]
   }
