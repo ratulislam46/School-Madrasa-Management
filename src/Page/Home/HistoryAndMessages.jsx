@@ -3,6 +3,7 @@ import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaHistory, FaUsers, FaEye, FaArrowRight, FaPhoneAlt, FaPaperPlane, FaTimes } from 'react-icons/fa';
 import TeachersMessage from '../TeachersMessage/TeachersMessage'
+import { Link } from 'react-router';
 
 const HistoryAndMessages = () => {
     const [messages, setMessages] = useState([]);
@@ -69,9 +70,12 @@ const HistoryAndMessages = () => {
                                 <p className="text-gray-600 leading-relaxed text-sm md:text-base text-justify">
                                     বিডিআইটিহোম স্কুল এন্ড মাদ্রাসা একটি ঐতিহ্যবাহী শিক্ষা প্রতিষ্ঠান। আধুনিক ও ইসলামী শিক্ষার সমন্বয়ে আমরা গড়ে তুলছি আগামীর ভবিষ্যৎ। আমাদের লক্ষ্য সুশিক্ষিত, নীতিবান ও দেশপ্রেমিক নাগরিক গড়ে তোলা। প্রতিষ্ঠানের শুরু থেকেই আমরা মেধা ও মনন বিকাশে বদ্ধপরিকর।
                                 </p>
-                                <button className="mt-6 flex items-center gap-2 bg-[#065f46] hover:bg-[#044d39] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all cursor-pointer">
+                                <Link
+                                    to="/history"
+                                    className="mt-6 flex items-center gap-2 bg-[#065f46] hover:bg-[#044d39] text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all w-fit"
+                                >
                                     বিস্তারিত ইতিহাস <FaArrowRight size={12} />
-                                </button>
+                                </Link>
                             </div>
                             <div className="w-full md:w-64 h-48 rounded-2xl overflow-hidden border-4 border-gray-50 shadow-sm">
                                 <img src="https://i.ibb.co.com/WNZhbxQr/campus.png" className="w-full h-full object-cover" alt="Building" />
