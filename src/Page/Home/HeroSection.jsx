@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaVolumeUp, FaArrowRight, FaClock } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const HeroSection = () => {
     const [notices, setNotices] = useState([]);
@@ -70,7 +71,14 @@ const HeroSection = () => {
                             <FaVolumeUp />
                             <h3 className="font-bold">নোটিশ বোর্ড</h3>
                         </div>
-                        <button className="bg-white/20 text-white text-[10px] px-3 py-1 rounded-md hover:bg-white/30">সকল</button>
+
+                        {/* All Notice button  */}
+                        <Link
+                            to="/all-notices"
+                            className="bg-white/20 text-white text-[10px] px-3 py-1 rounded-md hover:bg-white/30 transition-colors cursor-pointer inline-block"
+                        >
+                            সকল
+                        </Link>
                     </div>
 
                     <div className="grow relative overflow-hidden group">
