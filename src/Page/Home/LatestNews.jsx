@@ -58,9 +58,12 @@ const LatestNews = () => {
                                 <p className="text-gray-500 text-xs leading-relaxed mb-4 line-clamp-3">
                                     {item?.description}
                                 </p>
-                                <button className="text-green-700 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
-                                    বিস্তারিত <span>→</span>
-                                </button>
+                                <Link
+                                    to={`/news/${item.id}`}
+                                    className="text-[#064e3b] font-semibold text-sm flex items-center gap-1 hover:underline"
+                                >
+                                    বিস্তারিত পড়ুন
+                                </Link>
                             </div>
                         </motion.div>
                     ))}

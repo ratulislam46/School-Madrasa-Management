@@ -17,10 +17,8 @@ const StaffSection = () => {
     }, []);
 
     return (
-        <div>
-            <DefaultWeight>
-
-                <div className="text-center">
+        <div className='px-6 md:px-16 lg:px-24 py-12'>
+                <div className="container mx-auto text-center">
                     {/* Header */}
                     <h2 className="text-3xl md:text-4xl font-bold mb-2">
                         আমাদের সম্মানিত শিক্ষকবৃন্দ
@@ -81,8 +79,6 @@ const StaffSection = () => {
                         </Link>
                     </div>
                 </div>
-
-            </DefaultWeight>
         </div>
     );
 };

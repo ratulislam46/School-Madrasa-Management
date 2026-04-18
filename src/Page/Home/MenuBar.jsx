@@ -81,8 +81,8 @@ const MenuBar = () => {
             </div>
 
             {/* Mobile menu slider for small device  */}
-            <div className={`md:hidden bg-[#1a6b50] overflow-hidden transition-all duration-500 ${isOpen ? 'max-h-125 border-t border-white/20' : 'max-h-0'}`}>
-                <div className="px-4 py-4 space-y-3">
+            <div className={`md:hidden bg-[#1a6b50] overflow-hidden transition-all duration-500 ${isOpen ? 'border-t border-white/20' : 'max-h-0'}`}>
+                <div className="px-4 py-4 space-y-3 container mx-auto">
                     {navLinks?.map((item, index) => (
                         <div key={index}>
                             {item.subLinks ? (
