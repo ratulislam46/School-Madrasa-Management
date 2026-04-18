@@ -1,11 +1,8 @@
 import React from 'react';
 import { FaMusic, FaUserShield, FaFacebook } from 'react-icons/fa';
-import telephoneImg from '../assets/telephone.png';
+import telephoneImg from '../../assets/telephone.png';
 
 const MultiMedia = () => {
-
-    const fbPageUrl = "https://www.facebook.com/itbiponibd";
-    const fbEmbedSrc = `https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(fbPageUrl)}&tabs=timeline&width=340&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true`;
 
     return (
         <section className="bg-gray-50 py-16 px-4 md:px-8 lg:px-16">
@@ -20,7 +17,7 @@ const MultiMedia = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                     {/* National Anthem Card */}
                     <div className="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-2xl">
@@ -58,29 +55,6 @@ const MultiMedia = () => {
 
                         <div className="grow p-4 flex flex-col items-center justify-center">
                             <img src={telephoneImg} alt="Special Corner" className="w-full h-auto object-contain" />
-                        </div>
-                    </div>
-
-                    {/* Facebook Page Card */}
-                    <div className="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col h-full transform transition hover:-translate-y-1 hover:shadow-2xl">
-                        <div className="bg-[#056f4d] p-5 flex items-center justify-center gap-3">
-                            <FaFacebook className="text-white text-xl" />
-                            <h3 className="text-white text-lg font-bold">ফেসবুক পেজ</h3>
-                        </div>
-
-                        <div className="grow p-2 flex items-center justify-center overflow-hidden">
-                            <iframe
-                                src={fbEmbedSrc}
-                                width="340"
-                                height="400"
-                                style={{ border: 'none', overflow: 'hidden' }}
-                                scrolling="no"
-                                frameBorder="0"
-                                allowFullScreen={true}
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-
-                            >
-                            </iframe>
                         </div>
                     </div>
 

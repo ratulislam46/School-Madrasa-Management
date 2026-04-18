@@ -28,9 +28,9 @@ const HeroSection = () => {
         <section className="py-12 px-4 md:px-10 bg-gray-50">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-                <div className="lg:col-span-5 flex flex-col gap-4">
+                <div className="lg:col-span-8 flex flex-col gap-4">
                     <div className="relative h-75 md:h-100 rounded-2xl overflow-hidden shadow-lg group">
-                        <AnimatePresence mode='wait'>
+                        <AnimatePresence>
                             <motion.div
                                 key={activeIndex}
                                 initial={{ opacity: 0, scale: 1.1 }}
@@ -40,7 +40,7 @@ const HeroSection = () => {
                                 className="w-full h-full relative"
                             >
                                 <img src={galleryData[activeIndex].src} className="w-full h-full object-cover" alt="gallery" />
-                                
+
                                 <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-black/80 to-transparent p-6">
                                     <h2 className="text-white text-lg md:text-xl font-bold leading-tight">
                                         {galleryData[activeIndex].title}
@@ -63,30 +63,8 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="lg:col-span-4 bg-white p-8 rounded-3xl shadow-sm border border-gray-100 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-green-50 rounded-bl-full -z-0 opacity-50"></div>
-                    <div className="relative z-10 flex flex-col h-full">
-                        <div className="flex items-center gap-2 mb-6">
-                            <span className="text-4xl text-green-600 font-serif">“</span>
-                            <h3 className="text-xl font-bold text-gray-800">বাণী</h3>
-                        </div>
-                        <div className="flex items-center gap-4 mb-6">
-                            <img src="https://i.ibb.co.com/SDzLVmdP/old-man.jpg" className="w-16 h-16 rounded-full border-2 border-green-100 p-1 object-cover" alt="head" />
-                            <div>
-                                <h4 className="font-bold text-gray-800">মো: কামরুল ইসলাম</h4>
-                                <p className="text-green-600 text-xs font-semibold">অধ্যক্ষ</p>
-                            </div>
-                        </div>
-                        <p className="text-gray-500 text-sm leading-relaxed grow italic">
-                            আমাদের লক্ষ্য শুধু পরীক্ষায় ভালো ফল নয়, বরং শিক্ষার্থীদের জীবনদক্ষতা, শৃঙ্খলা ও নৈতিকতার বিকাশ ঘটানো। অভিজ্ঞ শিক্ষকবৃন্দ ও আধুনিক শিক্ষা ব্যবস্থার মাধ্যমে আমরা একটি শিক্ষাবান্ধব পরিবেশ নিশ্চিত করছি।
-                        </p>
-                        <button className="mt-6 flex items-center gap-2 bg-[#065f46] text-white px-6 py-2.5 rounded-lg text-sm font-bold w-fit hover:bg-green-800 transition-all">
-                            বিস্তারিত পড়ুন <FaArrowRight size={12} />
-                        </button>
-                    </div>
-                </div>
-
-                <div className="lg:col-span-3 bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col h-112.5 lg:h-full">
+                {/* Notice board  */}
+                <div className="lg:col-span-4 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col h-112.5 lg:h-full">
                     <div className="bg-[#065f46] p-4 flex justify-between items-center">
                         <div className="flex items-center gap-2 text-white">
                             <FaVolumeUp />
@@ -100,8 +78,9 @@ const HeroSection = () => {
                             {[...notices, ...notices].map((notice, idx) => (
                                 <div key={idx} className="flex gap-4 p-3 border-b border-gray-50 hover:bg-gray-50 rounded-xl transition-all cursor-pointer">
                                     <div className="bg-green-50 text-green-700 min-w-12.5 h-12 flex flex-col items-center justify-center rounded-lg">
-                                        <span className="text-xs font-bold leading-none">{notice.date.split(' ')[0]}</span>
-                                        <span className="text-[10px] font-medium">{notice.date.split(' ')[1]}</span>
+                                        <span className="text-[10px] leading-none">{notice?.date.split(' ')[0]}</span>
+                                        <span className="text-[10px]">{notice?.date.split(' ')[1]}</span>
+                                        <span className="text-[10px]">{notice?.date.split(' ')[2]}</span>
                                     </div>
                                     <div className="flex flex-col justify-center">
                                         <h4 className="text-[13px] font-bold text-gray-700 line-clamp-2 leading-tight mb-1">{notice.title}</h4>
@@ -117,17 +96,19 @@ const HeroSection = () => {
             </div>
 
             <style jsx>{`
-                @keyframes marquee-v {
-                    0% { transform: translateY(0); }
-                    100% { transform: translateY(-50%); }
-                }
-                .marquee-vertical {
-                    animation: marquee-v 20s linear infinite;
-                }
-                .marquee-vertical:hover {
-                    animation-play-state: paused;
-                }
-            `}</style>
+    @keyframes marquee-v {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); } 
+    }
+    .marquee-vertical {
+        animation: marquee-v 15s linear infinite;
+        will-change: transform; 
+        backface-visibility: hidden;
+    }
+    .marquee-vertical:hover {
+        animation-play-state: paused;
+    }
+`}</style>
         </section>
     );
 };

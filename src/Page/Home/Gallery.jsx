@@ -77,7 +77,7 @@ const Gallery = () => {
                         {videos?.map((video) => (
                             <div key={video.id} className="flex gap-4 p-2 bg-white rounded-xl hover:shadow-md transition-shadow group cursor-pointer">
                                 <div className="relative w-32 h-20 shrink-0 overflow-hidden rounded-lg">
-                                    <img src={video.thumbnail} className="w-full h-full object-cover" alt={video.title} onError={(e) => { e.target.src = 'https://via.placeholder.com/150'; }} />
+                                    <img src={video.thumbnail} className="w-full h-full object-cover" alt={video.title} onError={(e) => { e.target.src = 'https://placehold.co/150'; }} />
                                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                                         <div className="bg-red-600 p-2 rounded-full text-white transform group-hover:scale-110 transition-transform">
                                             <FaPlay size={10} />
@@ -119,11 +119,11 @@ const Gallery = () => {
                 )}
             </AnimatePresence>
 
-            <style jsx>{`
+            {/* <style jsx>{`
                 .custom-scrollbar::-webkit-scrollbar { width: 5px; }
                 .custom-scrollbar::-webkit-scrollbar-track { background: #e5e7eb; border-radius: 10px; }
                 .custom-scrollbar::-webkit-scrollbar-thumb { background: #9ca3af; border-radius: 10px; }
-            `}</style>
+            `}</style> */}
         </section>
     );
 };

@@ -1,14 +1,14 @@
 import React from 'react';
-import Testimonials from './Testimonials';
-import LatestNews from './LatestNews';
-import ImportantLinks from './ImportantLinks';
-import StaffSection from './StaffSection';
-import MultiMedia from './MultiMedia';
-import Gallery from './Gallery';
-import HistoryAndMessages from './HistoryAndMessages';
-import HeroSection from './HeroSection';
-import MenuBar from './MenuBar';
 import Banner from './Banner';
+import MenuBar from '../Home/MenuBar';
+import HeroSection from '../Home/HeroSection';
+import HistoryAndMessages from '../Home/HistoryAndMessages';
+import StaffSection from '../Home/StaffSection';
+import Gallery from '../Home/Gallery';
+import MultiMedia from '../Home/MultiMedia';
+import ImportantLinks from '../Home/ImportantLinks';
+import LatestNews from '../Home/LatestNews';
+import Testimonials from '../Home/Testimonials';
 
 const HomePage = () => {
     return (

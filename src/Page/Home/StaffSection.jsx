@@ -55,7 +55,7 @@ const StaffSection = () => {
 
                 {/* Staff List */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
-                    <AnimatePresence mode='wait'>
+                    <AnimatePresence>
                         {filteredStaff?.map((staff) => (
                             <motion.div
                                 key={staff.id}
@@ -76,7 +76,7 @@ const StaffSection = () => {
                                             src={staff.image} 
                                             alt={staff.name} 
                                             className="w-full h-full object-cover"
-                                            onError={(e) => { e.target.src = 'https://via.placeholder.com/150'; }}
+                                            onError={(e) => { e.target.src = 'https://placehold.co/150'; }}
                                         />
                                     </div>
                                 </div>
