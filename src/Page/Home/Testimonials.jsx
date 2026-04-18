@@ -34,7 +34,7 @@ const Testimonials = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             whileHover={{ y: -8 }}
                             transition={{ duration: 0.3 }}
-                            className="relative bg-white p-8 rounded-xl shadow-sm border border-gray-50 overflow-hidden group"
+                            className="relative bg-white p-6 rounded-xl shadow-sm border border-gray-50 overflow-hidden group"
                         >
                             {/* Background Decorative Circles */}
                             <div className="absolute top-0 right-0 w-24 h-24 bg-[#E8F5EE] rounded-bl-full -mr-8 -mt-8 opacity-50 transition-all group-hover:scale-110"></div>
@@ -74,24 +74,9 @@ const Testimonials = () => {
                                         {item.class}
                                     </span>
                                 </div>
-
-                                {/* Button */}
-                                <button className="text-[10px] border border-gray-200 group-hover:bg-[#065F46] group-hover:text-white duration-300 font-bold py-2 px-6 rounded-full transition-all active:scale-95">
-                                    বিস্তারিত পড়ুন
-                                </button>
                             </div>
                         </motion.div>
                     ))}
-                </div>
-
-                {/* Footer Button */}
-                <div className="text-center mt-12">
-                    <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        className="bg-[#065F46] hover:bg-[#044231] text-white px-10 py-3 rounded-full font-bold text-sm shadow-xl transition-all"
-                    >
-                        সকল মতামত দেখুন
-                    </motion.button>
                 </div>
             </div>
         </section>
