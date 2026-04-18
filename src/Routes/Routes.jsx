@@ -6,6 +6,8 @@ import AllNotices from "../Page/AllNotices/AllNotices";
 import Messages from "../Page/Messages/Messages";
 import History from "../Page/History/History";
 import AllTeachers from "../Page/AllTeachers/AllTeachers";
+import AllNews from "../Page/AllNews/AllNews";
+import NewsDetails from "../Page/AllNews/NewsDetails";
 
 export const router = createBrowserRouter([
   {
@@ -26,12 +28,20 @@ export const router = createBrowserRouter([
         Component: Messages
       },
       {
-        path:'/history',
+        path: '/history',
         Component: History
       },
       {
-        path:'all-teachers',
-        Component:AllTeachers
+        path: 'all-teachers',
+        Component: AllTeachers
+      },
+      {
+        path: 'all-news',
+        Component: AllNews
+      },
+      {
+        path: "news/:id",
+        Component: NewsDetails
       }
     ]
   }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router';
 
 const LatestNews = () => {
     const [news, setNews] = useState([]);
@@ -27,7 +28,7 @@ const LatestNews = () => {
 
                 {/* News Cars */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {news?.map((item) => (
+                    {news?.slice(0, 4)?.map((item) => (
                         <motion.div
                             key={item.id}
                             whileHover={{ y: -10 }}
@@ -36,26 +37,26 @@ const LatestNews = () => {
                             {/* Image Container */}
                             <div className="relative h-48 w-full overflow-hidden bg-gray-100">
                                 <img
-                                    src={item.image}
-                                    alt={item.title}
+                                    src={item?.image}
+                                    alt={item?.title}
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
                                 {/* Date Badge */}
                                 <div className="absolute top-3 left-3 bg-[#065f46] text-white text-[11px] font-bold px-3 py-1 rounded">
-                                    {item.date}
+                                    {item?.date}
                                 </div>
                             </div>
 
                             {/* Content */}
                             <div className="p-5">
                                 <span className="text-gray-400 text-xs font-medium block mb-2">
-                                    {item.category}
+                                    {item?.category}
                                 </span>
                                 <h3 className="text-lg font-bold text-gray-800 leading-snug mb-3 group-hover:text-green-700 transition-colors">
-                                    {item.title}
+                                    {item?.title}
                                 </h3>
                                 <p className="text-gray-500 text-xs leading-relaxed mb-4 line-clamp-3">
-                                    {item.description}
+                                    {item?.description}
                                 </p>
                                 <button className="text-green-700 text-xs font-bold flex items-center gap-1 hover:gap-2 transition-all">
                                     বিস্তারিত <span>→</span>
@@ -67,9 +68,12 @@ const LatestNews = () => {
 
                 {/* View All Button */}
                 <div className="text-center mt-12">
-                    <button className="bg-[#064e3b] hover:bg-[#032f24] text-white px-8 py-3 rounded-full font-bold shadow-lg transition-all active:scale-95">
+                    <Link
+                        to="/all-news"
+                        className="bg-[#064e3b] hover:bg-[#032f24] text-white px-8 py-3 rounded-full font-bold shadow-lg transition-all active:scale-95 inline-block"
+                    >
                         সকল খবর দেখুন
-                    </button>
+                    </Link>
                 </div>
             </div>
 
