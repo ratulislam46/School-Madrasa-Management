@@ -8,6 +8,8 @@ import History from "../Page/History/History";
 import AllTeachers from "../Page/AllTeachers/AllTeachers";
 import AllNews from "../Page/AllNews/AllNews";
 import NewsDetails from "../Page/AllNews/NewsDetails";
+import Contact from "../Page/Contact/Contact";
+import RulesRegulation from "../Page/RulesRegulation/RulesRegulation";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +44,14 @@ export const router = createBrowserRouter([
       {
         path: "news/:id",
         Component: NewsDetails
+      },
+      {
+        path: 'contact',
+        Component: Contact
+      },
+      {
+        path: 'rules-regulation',
+        Component: RulesRegulation
       }
     ]
   }

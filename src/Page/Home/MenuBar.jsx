@@ -6,9 +6,8 @@ const MenuBar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const navLinks = [
-        { name: 'হোম', link: '#' },
-        { name: 'প্রতিষ্ঠান এর ইতিহাস', link: '#' },
-        { name: 'আমাদের সম্পর্কে', link: '#' },
+        { name: 'হোম', link: '/' },
+        { name: 'প্রতিষ্ঠান এর ইতিহাস', link: '/history' },
         {
             name: 'একাডেমী',
             link: '#',
@@ -17,9 +16,9 @@ const MenuBar = () => {
                 { name: 'ফলাফল', link: '#' }
             ]
         },
-        { name: 'ব্লগ ও নিউজ', link: '#' },
-        { name: 'যোগাযোগ', link: '#' },
-        { name: 'নীতিমালা', link: '#' },
+        { name: 'নিউজ', link: '/all-news' },
+        { name: 'যোগাযোগ', link: '/contact' },
+        { name: 'নীতিমালা', link: '/rules-regulation' },
         { name: 'ড্যাশবোর্ড', link: '#' },
     ];
 
