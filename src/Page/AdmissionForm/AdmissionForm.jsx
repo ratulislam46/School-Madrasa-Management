@@ -43,7 +43,7 @@ const AdmissionForm = () => {
     return (
         <div className="py-12 bg-gray-50">
             <DefaultWeight>
-                <div className="max-w-2xl mx-auto bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-gray-100">
+                <div className="bg-white p-8 md:p-10 rounded-2xl shadow-md border border-gray-100">
                     <div className="mb-8">
                         <h2 className="text-3xl font-bold mb-2">অনলাইন ভর্তি আবেদন</h2>
                         <p className="text-gray-500">আপনার প্রয়োজনীয় তথ্য দিয়ে নিচে ফর্মটি পূরণ করুন</p>

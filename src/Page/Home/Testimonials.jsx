@@ -4,13 +4,11 @@ import { motion } from 'framer-motion';
 
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
-    console.log(reviews);
 
     useEffect(() => {
         axios.get('/testimonials.json')
             .then(res => {
                 setReviews(res.data);
-                console.log(res.data);
             })
             .catch(err => console.error("Error fetching testimonials:", err));
     }, []);

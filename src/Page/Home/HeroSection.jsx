@@ -23,7 +23,7 @@ const HeroSection = () => {
             setActiveIndex((prev) => (prev + 1) % galleryData.length);
         }, 5000);
         return () => clearInterval(interval);
-    }, []);
+    }, [galleryData.length]);
 
     return (
         <section className="py-12 px-4 md:px-10 bg-gray-50">
@@ -83,7 +83,7 @@ const HeroSection = () => {
 
                     <div className="grow relative overflow-hidden group">
                         <div className="absolute inset-0 marquee-vertical space-y-1 p-4">
-                            {[...notices, ...notices].map((notice, idx) => (
+                            {[...notices, ...notices]?.map((notice, idx) => (
                                 <div key={idx} className="flex gap-4 p-3 border-b border-gray-50 hover:bg-gray-50 rounded-xl transition-all cursor-pointer">
                                     <div className="bg-green-50 text-green-700 min-w-12.5 h-12 flex flex-col items-center justify-center rounded-lg">
                                         <span className="text-[10px] leading-none">{notice?.date.split(' ')[0]}</span>

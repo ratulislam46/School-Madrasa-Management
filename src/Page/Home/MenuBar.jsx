@@ -32,7 +32,7 @@ const MenuBar = () => {
                     </div>
 
                     {/* Menu Button For Lerge Device  */}
-                    <div className="hidden md:flex items-center space-x-1 lg:space-x-4">
+                    <div className="hidden md:flex items-center gap-2 space-x-1 lg:space-x-4">
                         {navLinks?.map((item, index) => (
                             item.subLinks ? (
                                 <div
