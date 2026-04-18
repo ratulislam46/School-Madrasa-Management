@@ -1,14 +1,6 @@
 [
   {
     "id": 1,
-    "name": "মো: জাহিদুল ইসলাম",
-    "role": "সহকারী প্রধান শিক্ষক",
-    "phone": "০১৭১২-৩৪৫৬৭৮",
-    "category": "শিক্ষক মণ্ডলী",
-    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
-  },
-  {
-    "id": 2,
     "name": "মাওলানা মুহাম্মদ সাইফুল ইসলাম",
     "role": "মাদ্রাসা সুপার / অধ্যক্ষ",
     "phone": "০১৮১৯-৭৮৯৪৫৬",
@@ -16,7 +8,7 @@
     "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "মো: আব্দুল করিম",
     "role": "প্রধান শিক্ষক",
     "phone": "০১৭১২-৩৪৫৬৭৮",
@@ -24,19 +16,67 @@
     "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "মো: রহিম উদ্দিন",
-    "role": "হিসাব রক্ষক",
+    "role": "সহকারী প্রধান শিক্ষক",
     "phone": "০১৯১১-২২৩৩৪৪",
-    "category": "কর্মকর্তা",
+    "category": "শিক্ষক মণ্ডলী",
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
+  },
+  {
+    "id": 4,
+    "name": "মো: কামাল হোসেন",
+    "role": "সহকারী শিক্ষক",
+    "phone": "০১৭০০-১১২২৩৩",
+    "category": "শিক্ষক মণ্ডলী",
     "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   },
   {
     "id": 5,
-    "name": "মো: কামাল হোসেন",
-    "role": "অফিস সহকারী",
-    "phone": "০১৭০০-১১২২৩৩",
-    "category": "কর্মচারী",
+    "name": "জনাব আলী আহমেদ",
+    "role": "সহকারী শিক্ষক",
+    "phone": "০১৮৮৮-৪৪৫৫৬৬",
+    "category": "শিক্ষক মণ্ডলী",
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
+  },
+  {
+    "id": 6,
+    "name": "মোসাম্মৎ ফাতেমা বেগম",
+    "role": "সহকারী শিক্ষিকা",
+    "phone": "০১৭৩৩-৯৯৮৮৭৭",
+    "category": "শিক্ষক মণ্ডলী",
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
+  },
+  {
+    "id": 7,
+    "name": "আবু বকর সিদ্দিক",
+    "role": "ধর্মীয় শিক্ষক",
+    "phone": "০১৯৪৪-৫৫৬৬৭৭",
+    "category": "শিক্ষক মণ্ডলী",
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
+  },
+  {
+    "id": 8,
+    "name": "সাবিনা ইয়াসমিন",
+    "role": "সহকারী শিক্ষিকা",
+    "phone": "০১৮৫৫-২২৩৩১১",
+    "category": "শিক্ষক মণ্ডলী",
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
+  },
+  {
+    "id": 9,
+    "name": "জাহাঙ্গীর আলম",
+    "role": "সহকারী শিক্ষক",
+    "phone": "০১৭৭৭-৮৮৯৯০০",
+    "category": "শিক্ষক মণ্ডলী",
+    "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
+  },
+  {
+    "id": 10,
+    "name": "রিনা আক্তার",
+    "role": "শরীরচর্চা শিক্ষিকা",
+    "phone": "০১৯৯৯-১১২২৩৩",
+    "category": "শিক্ষক মণ্ডলী",
     "image": "https://i.ibb.co.com/SDzLVmdP/old-man.jpg"
   }
 ]

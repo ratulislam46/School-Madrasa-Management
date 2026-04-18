@@ -5,6 +5,7 @@ import ErrorPage from "../Components/ErrorPage";
 import AllNotices from "../Page/AllNotices/AllNotices";
 import Messages from "../Page/Messages/Messages";
 import History from "../Page/History/History";
+import AllTeachers from "../Page/AllTeachers/AllTeachers";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path:'/history',
         Component: History
+      },
+      {
+        path:'all-teachers',
+        Component:AllTeachers
       }
     ]
   }

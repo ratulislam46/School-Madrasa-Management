@@ -7,7 +7,7 @@ const History = () => {
             <DefaultWeight>
 
                     {/* Header */}
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-12 md:mb-16">
                         <h1 className="text-3xl md:text-4xl font-bold  mb-4">আমাদের ইতিহাস ও ঐতিহ্য</h1>
                     </div>
 
@@ -26,7 +26,7 @@ const History = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <img src="https://i.ibb.co.com/WNZhbxQr/campus.png" alt="Campus 1" className="rounded-xl shadow-lg w-full h-40 object-cover" />
                             <img src="https://i.ibb.co.com/W4nHVfX5/computer-lab.jpg" alt="Campus 2" className="rounded-xl shadow-lg w-full h-40 object-cover" />
-                            <img src="https://i.ibb.co.com/vCDxsFQr/stude.jpg" alt="Campus 3" className="w-full h-60 object-cover col-span-2" />
+                            <img src="https://i.ibb.co.com/vCDxsFQr/stude.jpg" alt="Campus 3" className="rounded-xl w-full h-60 object-cover col-span-2" />
                         </div>
                     </div>
 
