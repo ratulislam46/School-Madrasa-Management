@@ -52,6 +52,22 @@ const Footer = () => {
                         </ul>
                     </div>
 
+                    {/* 4. Support & Legal */}
+                    <div>
+                        <h3 className="text-xl font-bold text-white mb-5 border-l-4 border-green-500 pl-3">অন্যান্য</h3>
+                        <ul className="space-y-3 text-sm">
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/terms">Terms & Conditions</Link>
+                            </li>
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/privacy">Privacy Policy</Link>
+                            </li>
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/support">Support</Link>
+                            </li>
+                        </ul>
+                    </div>
+
                     {/* Contact Info */}
                     <div>
                         <h3 className="text-xl font-bold text-white mb-5 border-l-4 border-green-500 pl-3">ঠিকানা ও যোগাযোগ</h3>

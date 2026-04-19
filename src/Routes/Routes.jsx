@@ -11,6 +11,9 @@ import NewsDetails from "../Page/AllNews/NewsDetails";
 import Contact from "../Page/Contact/Contact";
 import RulesRegulation from "../Page/RulesRegulation/RulesRegulation";
 import AdmissionForm from "../Page/AdmissionForm/AdmissionForm";
+import TermsAndConditions from "../Page/TermsAndConditions/TermsAndConditions";
+import PrivacyPolicy from "../Page/PrivacyPolicy/PrivacyPolicy";
+import Support from "../Page/Support/Support";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +60,18 @@ export const router = createBrowserRouter([
       {
         path: 'admission-form',
         Component: AdmissionForm
+      },
+      {
+        path: 'terms',
+        Component: TermsAndConditions
+      },
+      {
+        path: 'privacy',
+        Component: PrivacyPolicy
+      },
+      {
+        path: 'support',
+        Component: Support
       }
     ]
   }
