@@ -20,7 +20,7 @@ const HomePage = () => {
             <StaffSection/>
             <Gallery/>
             <MultiMedia/>
-            <ImportantLinks/>
+            {/* <ImportantLinks/> */}
             <LatestNews/>
            <Testimonials/>
         </div>
