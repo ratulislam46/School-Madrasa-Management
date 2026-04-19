@@ -15,12 +15,23 @@ const Navbar = () => {
                     {/* Marquee right to left  */}
 
                     <div className="flex gap-2">
-                        <button className="bg-[#22C55E] hover:bg-[#16a34a] px-4 py-2 rounded-md flex items-center gap-2 font-bold text-sm transition hover:cursor-pointer">
+                        {/* Desktop WhatsApp */}
+                        <a 
+                            href="https://wa.me/8801750965595" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="bg-[#22C55E] hover:bg-[#16a34a] px-4 py-2 rounded-md flex items-center gap-2 font-bold text-sm transition"
+                        >
                             <FaWhatsapp className="text-lg" />
-                        </button>
-                        <button className="bg-[#3B82F6] hover:bg-[#2563eb] px-4 py-2 rounded-md flex items-center gap-2 font-bold text-sm transition hover:cursor-pointer">
-                            <FaPhoneAlt/>
-                        </button>
+                        </a>
+                        
+                        {/* Desktop Phone */}
+                        <a 
+                            href="tel:+8801750965595"
+                            className="bg-[#3B82F6] hover:bg-[#2563eb] px-4 py-2 rounded-md flex items-center gap-2 font-bold text-sm transition"
+                        >
+                            <FaPhoneAlt />
+                        </a>
                     </div>
                 </div>
 
@@ -36,12 +47,23 @@ const Navbar = () => {
 
                     {/* Mobile Buttons */}
                     <div className="flex gap-2 h-8">
-                        <button className="flex-1 bg-[#22C55E] rounded flex items-center justify-center hover:cursor-pointer">
+                        {/* Mobile WhatsApp */}
+                        <a
+                            href="https://wa.me/8801750965595"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 bg-[#22C55E] rounded flex items-center justify-center transition-opacity hover:opacity-90"
+                        >
                             <FaWhatsapp className="text-white" />
-                        </button>
-                        <button className="flex-1 bg-[#3B82F6] rounded flex items-center hover:cursor-pointer justify-center">
+                        </a>
+
+                        {/* Mobile Phone */}
+                        <a
+                            href="tel:+8801750965595"
+                            className="flex-1 bg-[#3B82F6] rounded flex items-center justify-center transition-opacity hover:opacity-90"
+                        >
                             <FaPhoneAlt className="text-white text-xs" />
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
