@@ -14,6 +14,8 @@ import AdmissionForm from "../Page/AdmissionForm/AdmissionForm";
 import TermsAndConditions from "../Page/TermsAndConditions/TermsAndConditions";
 import PrivacyPolicy from "../Page/PrivacyPolicy/PrivacyPolicy";
 import Support from "../Page/Support/Support";
+import AllMessages from "../Page/TeachersMessage/AllMessages";
+import MessageDetails from "../Page/TeachersMessage/MessageDetails";
 
 export const router = createBrowserRouter([
   {
@@ -72,6 +74,14 @@ export const router = createBrowserRouter([
       {
         path: 'support',
         Component: Support
+      },
+      {
+        path: 'all-messages',
+        Component: AllMessages
+      },
+      {
+        path: 'message/:id',
+        Component: MessageDetails
       }
     ]
   }
