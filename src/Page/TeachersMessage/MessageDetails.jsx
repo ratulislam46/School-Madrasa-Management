@@ -36,11 +36,11 @@ const MessageDetails = () => {
     }
 
     return (
-        <div className="py-12 bg-gray-50">
+        <div className="py-12">
             <DefaultWeight>
 
                 {/* Details Content */}
-                <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
+                <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
                     <div className="flex flex-col md:flex-row gap-8 items-start">
                         {/* Image */}
                         <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl overflow-hidden border-4 border-green-50 shadow-lg shrink-0">
