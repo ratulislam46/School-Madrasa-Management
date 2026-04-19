@@ -4,9 +4,9 @@ import { Link } from 'react-router';
 
 const TeachersMessage = ({ messages }) => {
     return (
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 h-fit">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
             {/* Header Section */}
-            <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <FaUsers className="text-green-700 text-xl" />
                     <h2 className="text-xl font-bold text-gray-800">অন্যান্য বাণী</h2>

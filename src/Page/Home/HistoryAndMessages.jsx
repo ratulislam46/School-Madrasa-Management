@@ -58,6 +58,7 @@ const HistoryAndMessages = () => {
         <section className="bg-gray-50 py-12 px-4 md:px-10 font-sans">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
 
+                {/* প্রতিষ্ঠানের ইতিহাস */}
                 <div className="lg:col-span-2 space-y-6">
                     <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100">
                         <div className="flex items-center gap-3 mb-6">
