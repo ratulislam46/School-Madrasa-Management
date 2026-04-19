@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaYoutube } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
@@ -7,12 +8,12 @@ const Footer = () => {
             <div className="container mx-auto">
                 {/* Top Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 border-b border-gray-800 pb-10">
-                    
+
                     {/* Logo & Description */}
                     <div className="space-y-5">
-                        <img 
-                            src="/path-to-your-logo.png" 
-                            alt="School Madrasah Logo" 
+                        <img
+                            src="/path-to-your-logo.png"
+                            alt="School Madrasah Logo"
                             className="h-12 w-auto object-contain"
                         />
                         <p className="text-sm leading-relaxed">
@@ -33,23 +34,21 @@ const Footer = () => {
                     <div>
                         <h3 className="text-xl font-bold text-white mb-5 border-l-4 border-green-500 pl-3">প্রয়োজনীয় লিংক</h3>
                         <ul className="space-y-3 text-sm">
-                            <li className="hover:text-green-500 cursor-pointer transition">আমাদের সম্পর্কে</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">যোগাযোগ</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">ভর্তি তথ্য</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">নোটিশ বোর্ড</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">শিক্ষক মণ্ডলী</li>
-                        </ul>
-                    </div>
-
-                    {/* Information Links */}
-                    <div>
-                        <h3 className="text-xl font-bold text-white mb-5 border-l-4 border-green-500 pl-3">তথ্য বাতায়ন</h3>
-                        <ul className="space-y-3 text-sm">
-                            <li className="hover:text-green-500 cursor-pointer transition">শিক্ষা মন্ত্রণালয়</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">মাউশি</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">ঢাকা বোর্ড</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">ব্যানবেইস</li>
-                            <li className="hover:text-green-500 cursor-pointer transition">শিক্ষক বাতায়ন</li>
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/history">আমাদের সম্পর্কে</Link>
+                            </li>
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/contact">যোগাযোগ</Link>
+                            </li>
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/admission-form">ভর্তি তথ্য</Link>
+                            </li>
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/all-notices">নোটিশ বোর্ড</Link>
+                            </li>
+                            <li className="hover:text-green-500 cursor-pointer transition">
+                                <Link to="/all-teachers">শিক্ষক মণ্ডলী</Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -61,13 +60,15 @@ const Footer = () => {
                                 <div className="bg-gray-800 p-2 rounded">
                                     <FaMapMarkerAlt className="text-green-500" />
                                 </div>
-                                <p>House #12, Road #4, Sector #10, Uttara, Dhaka-1230</p>
+                                {/* বাংলা ঠিকানা */}
+                                <p>বাড়ি ১২, রোড ৪, সেক্টর ১০, উত্তরা, ঢাকা-১২৩০</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="bg-gray-800 p-2 rounded">
                                     <FaPhoneAlt className="text-green-500" />
                                 </div>
-                                <p>+880 1750-965595</p>
+                                {/* বাংলা ফোন নম্বর */}
+                                <p>+৮৮০ ১৭৫০-৯৬৫৫৯৫</p>
                             </div>
                             <div className="flex items-center gap-3">
                                 <div className="bg-gray-800 p-2 rounded">
@@ -75,18 +76,25 @@ const Footer = () => {
                                 </div>
                                 <p>service@itbiponi.com</p>
                             </div>
-                            <button className="mt-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded text-xs transition">
+
+                            {/* ম্যাপে দেখার লিংক */}
+                            <a
+                                href="https://maps.app.goo.gl/VpAkwTbEAp8mmenR9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block mt-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded text-xs transition"
+                            >
                                 ম্যাপে দেখুন
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 {/* Bottom Section */}
                 <div className="pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
-                    <p>© 2026 Demo School. All rights reserved.</p>
+                    <p>© 2026 Olive71. All rights reserved.</p>
                     <p>
-                        Developed by <span className="text-yellow-500 font-bold tracking-wider">Olive71</span>
+                        Developed by <span className="font-bold tracking-wider">Olive71</span>
                     </p>
                 </div>
             </div>

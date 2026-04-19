@@ -3,7 +3,7 @@ import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-        <nav className={`fixed left-0 w-full z-50 bg-[#111827] text-white border-y border-gray-800 shadow-lg py-2 px-4 bottom-0 md:top-0 md:bottom-auto`}>
+        <nav className={`fixed left-0 w-full z-50 bg-[#111827] text-white border-y border-gray-800 shadow-lg py-2 px-6 md:px-16 lg:px-24 bottom-0 md:top-0 md:bottom-auto`}>
 
             <div className="container mx-auto">
                 {/* Desktop View */}

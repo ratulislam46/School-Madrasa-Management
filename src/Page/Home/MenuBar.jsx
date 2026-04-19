@@ -70,10 +70,9 @@ const MenuBar = () => {
                         ))}
                     </div>
 
-                    {/* Reult button  */}
+                    {/* Result button  */}
                     <div className="flex items-center">
-                        <button className="bg-white text-[#1a6b50] px-4 py-1.5 md:px-5 md:py-2 rounded-lg font-bold text-sm md:text-base flex items-center gap-2 hover:bg-yellow-50 transition-all shadow-md cursor-pointer">
-                            <FaClipboardCheck className="text-green-600" />
+                        <button className="bg-white text-[#1a6b50] px-4 py-1.5 md:px-5 md:py-2 rounded-lg font-bold text-sm md:text-base transition-all cursor-pointer">
                             রেজাল্ট
                         </button>
                     </div>

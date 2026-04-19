@@ -26,7 +26,7 @@ const HeroSection = () => {
     }, [galleryData.length]);
 
     return (
-        <section className="py-12 px-4 md:px-10 bg-gray-50">
+        <section className="py-12 px-4 md:px-10">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
 
                 <div className="lg:col-span-8 flex flex-col gap-4">
